@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>nerds - ronir</title>
-	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/normalize-min.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -27,22 +27,22 @@
 			<section class="slider">
 				<h2 class="visually-hidden">Преимущества</h2>
 				<div class="slider-controls">
-					<i class="active"></i>
-          <i></i>
-          <i></i>
+					<i class="dot" onclick="currentSlide(1)"></i>
+          <i class="dot" onclick="currentSlide(2)"></i>
+          <i class="dot" onclick="currentSlide(3)"></i>
 				</div>
 				<ul class="slider-list">
-					<li class="slider-item">
+					<li class="slider-item fade">
 						<h3>Долго, дорого,<br> скрупулезно.</h3>
 						<p>Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
 						<a class="slider-item-btn btn" href="#">Узнать больше</a>
 					</li>
-					<li class="slider-item">
+					<li class="slider-item fade">
             <h3>Любим математику как никто другой</h3>
             <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
             <a class="slider-item-btn btn" href="#">Узнать больше</a>
           </li>
-          <li class="slider-item">
+          <li class="slider-item fade">
             <h3>Только ночь,<br> только хардкор</h3>
             <p>Работать днем, как все? Мы против этого.<br> Ближе к полуночи работа только начинается.</p>
             <a class="slider-item-btn btn" href="#">Узнать больше</a>
@@ -51,5 +51,39 @@
 			</section>
 		</div>
 	</header>
+
+	<main>
+		<div class="container">
+			<h1 class="visually-hidden">Дизайн-студия nerds</h1>
+			<section class="advantages">
+				<ul class="advantages-list">
+					<li class="advantage-item advantage-sites">
+						<h2 class="advantage-title">Веб-сайты</h2>
+						<p class="advantage-desc">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+						<img class="advantage-img" src="img/illustration-1.jpg" alt="Веб-сайты" width="300" height="146">
+						<a href="#" class="advantage-btn btn">Заказать</a>
+					</li>
+					<li class="advantage-item advantage-apps">
+						<h2 class="advantage-title">Приложения</h2>
+						<p class="advantage-desc">Покорите топ-10 приложений в AppStore и Google Play</p>
+						<img class="advantage-img" src="img/illustration-2.jpg" alt="Приложения" width="300" height="146">
+						<a href="#" class="advantage-btn btn">Заказать</a>
+					</li>
+					<li class="advantage-item advantage-presentations">
+						<h2 class="advantage-title">Презентации</h2>
+						<p class="advantage-desc">Вы даже не подозреваете,  насколько вы изумительны!</p>
+						<img class="advantage-img" src="img/illustration-3.jpg" alt="Презентации" width="300" height="146">
+						<a href="#" class="advantage-btn btn">Заказать</a>
+					</li>
+				</ul>
+			</section>
+			<hr>
+			<section class="about-us">
+				<h3 class="about-us-title">Мы — маленькая, но гордая дизайн-студия из Краснодара.</h3>
+				<p class="about-us-desc">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
+			</section>
+		</div>
+	</main>
+	<script src="js/script.js"></script>
 </body>
 </html>
