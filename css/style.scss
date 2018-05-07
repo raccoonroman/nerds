@@ -57,6 +57,11 @@ ul {
 	list-style: none;
 }
 
+hr {
+	margin: 0;
+	border: 1px solid #eee;
+}
+
 body {
 	margin: 0;
 	padding: 0;
@@ -123,7 +128,7 @@ input[type="checkbox"].visually-hidden {
 	text-transform: uppercase;
 	color: #fff;
 	background-color: #fb565a;
-	border-radius: 2px;
+	border-radius: 3px;
 
 	&:hover,
 	&:focus {
@@ -163,6 +168,7 @@ input[type="checkbox"].visually-hidden {
 }
 
 .nav-user-items {
+	display: flex;
 	margin-bottom: 9px;
 }
 
@@ -196,9 +202,6 @@ input[type="checkbox"].visually-hidden {
 	font-size: 0;
 	-webkit-transform: translateX(-50%);
 			transform: translateX(-50%);
-}
-
-.slider-controls {
 	
 	i {
 		position: relative;
@@ -294,42 +297,221 @@ input[type="checkbox"].visually-hidden {
 	flex-direction: column;
 	width: 300px;
 	margin-right: 100px;
+
+	.advantage-title {
+		margin: 0;
+		margin-bottom: 16px;
+		font-size: 24px;
+		font-weight: 700;
+		line-height: 30px;
+		text-transform: uppercase;
+		color: #000;
+	}
+
+	.advantage-desc {
+		margin: 0 20px 32px 0;
+	}
+
+	.advantage-img {
+		order: -1;
+		margin-bottom: 25px;
+	}
+
+	.advantage-btn {
+		align-self: flex-start;
+		padding: 16px 40px;
+	}
 }
 
-.advantage-apps .advantage-btn {
+.advantage-apps .btn {
 	background-color: #00ca74;
+
+	&:hover,
+	&:focus {
+		background-color: #00bc6c;
+	}
+
+	&:active {
+		background-color: #00aa62;
+	}
 }
 
-.advantage-presentations .advantage-btn {
+.advantage-presentations .btn {
 	background-color: #efc84a;
+
+	&:hover,
+	&:focus {
+		background-color: #eab534;
+	}
+
+	&:active {
+		background-color: #e5a722;
+	}
 }
 
-.advantage-title {
-	margin: 0;
-	margin-bottom: 16px;
-	font-size: 24px;
-	font-weight: 700;
-	line-height: 30px;
-	text-transform: uppercase;
-	color: #000;
+.about-us {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 49px;
 }
 
-.advantage-desc {
-	margin: 0 20px 32px 0;
+.about-us-left-column {
+	width: 670px;
+	padding-top: 41px;
+
+	.about-us-title {
+		margin: 33px 0;
+		font-size: 45px;
+		line-height: 45px;
+		font-weight: 500;
+		color: #000;
+	}
+
+	.about-us-desc {
+		margin: 0;
+		margin-bottom: 39px;
+	}
+
+	.orders-title {
+		margin: 0;
+		margin-bottom: 24px;
+		font-size: 16px;
+		line-height: 24px;
+		font-weight: 700;
+		text-transform: uppercase;
+		color: #000;
+	}
+
+	.order-item {
+		position: relative;
+		margin-bottom: 24px;
+		padding-left: 36px;
+
+		&::before {
+			content: "";
+			position: absolute;
+			top: 45%;
+			left: 0;
+			width: 25px;
+			height: 2px;
+			background-color: #fb565a;
+		}
+	}
 }
 
-.advantage-img {
-	order: -1;
-	margin-bottom: 25px;
+.about-us-right-column {
+	padding-top: 40px;
 }
 
-.advantage-btn {
-	align-self: flex-start;
-	padding: 16px 40px;
+.percentage {
+	width: 360px;
+
+	caption {
+		margin: 29px 0 38px;
+		font-size: 16px;
+		line-height: 24px;
+		font-weight: 700;
+		text-transform: uppercase;
+		color: #000;
+	}
+
+	td {
+		width: 120px;
+		padding-bottom: 16px;
+		font-size: 45px;
+		font-weight: 700;
+		line-height: 45px;
+		color: #000;
+
+		sup {
+			top: -14px;
+			font-size: 60%;
+		}
+	}
+
+	th {
+		width: 120px;
+		font-size: 16px;
+		line-height: 18px;
+		font-weight: 400;
+		color: inherit;
+		text-align: left;
+	}
 }
 
-hr {
-	border: 1px solid #eee;
+.clients {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin-bottom: 80px;
+	height: 184px;
+	border: 2px solid #eee;
+	border-left-width: 0;
+	border-right-width: 0;
+
+	.line {
+		width: 2px;
+		height: 52px;
+		background-color: #eee;
+	}
 }
+
+.client-item {
+	font-size: 0;
+	line-height: 0;
+	opacity: .2;
+	transition: .5s;
+
+	&:hover,
+	&:focus {
+		opacity: 1;
+	}
+
+	&:active {
+		opacity: .1;
+	}
+}
+
+.contacts .container {
+	position: relative;
+}
+
+.map {
+    width: 100%;
+    height: 416px;
+    overflow: hidden;
+
+    iframe {
+        border: 0;
+        width: 100%;
+    }
+}
+
+.contacts-info {
+	position: absolute;
+	top: 54px;
+	left: 10px;
+	width: 319px;
+	min-height: 308px;
+	padding: 50px 50px 47px;
+	background-color: #fff;
+
+	h3 {
+		margin: 0;
+		font-size: 18px;
+		font-weight: 700;
+		line-height: 30px;
+		color: #000;
+	}
+
+	p {
+		margin: 0;
+	}
+
+	.btn {
+		padding: 16px 44px;
+	}
+}
+
 
 
