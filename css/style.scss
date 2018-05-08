@@ -472,7 +472,7 @@ input[type="checkbox"].visually-hidden {
 	}
 }
 
-.contacts .container {
+.contacts {
 	position: relative;
 }
 
@@ -480,6 +480,7 @@ input[type="checkbox"].visually-hidden {
     width: 100%;
     height: 416px;
     overflow: hidden;
+    text-align: center;
 
     iframe {
         border: 0;
@@ -490,7 +491,7 @@ input[type="checkbox"].visually-hidden {
 .contacts-info {
 	position: absolute;
 	top: 54px;
-	left: 10px;
+	left: 0;
 	width: 319px;
 	min-height: 308px;
 	padding: 50px 50px 47px;
@@ -498,6 +499,7 @@ input[type="checkbox"].visually-hidden {
 
 	h3 {
 		margin: 0;
+		margin-bottom: 22px;
 		font-size: 18px;
 		font-weight: 700;
 		line-height: 30px;
@@ -506,11 +508,80 @@ input[type="checkbox"].visually-hidden {
 
 	p {
 		margin: 0;
+		color: #666;
+	}
+
+	.address {
+		margin-bottom: 15px;
+		line-height: 18px;
+	}
+
+	.tel {
+		margin-bottom: 33px;
 	}
 
 	.btn {
 		padding: 16px 44px;
 	}
+}
+
+.page-footer {
+	padding: 69px 0 70px;
+}
+
+.page-footer .container {
+	display: flex;
+	align-items: center;
+}
+
+.footer-social {
+	display: flex;
+	margin-right: 126px;
+
+	.social-link {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 78px;
+		height: 78px;
+		margin-right: 13px;
+		border-radius: 50%;
+		background-color: #e1e1e1;
+		transition: background-color .5s;
+
+		&:hover,
+		&:focus {
+			background-color: #e74246;
+		}
+
+		&:active {
+			background-color: #d7373b;
+			box-shadow: inset 0 3px rgba(0, 0, 0, .1);
+		}
+
+		&:active svg {
+			opacity: .3;
+		}
+	}
+}
+
+.collaboration {
+
+	b {
+		display: block;
+		margin-bottom: 10px;
+		font-size: 36px;
+		font-weight: 700;
+		line-height: 36px;
+		color: #000;
+	}
+
+	p {
+		margin: 0;
+		line-height: 22px;
+		color: #444;
+	}
+	
 }
 
 
