@@ -132,6 +132,29 @@
 			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651586!2d30.320894616097!3d59.938794181876254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0ZbRjywgMTkxMTg2!5e0!3m2!1suk!2sua!4v1525709542822" height="416" allowfullscreen></iframe>
 			<img src="img/map-marker.jpg" alt="ул. Большая Конюшенная 19/8, Санкт-Петербург" width="1725" height="416">
 		</section>
+
+		<section class="modal-feedback">
+		<h3 class="modal-feedback-title">Напишите нам</h3>
+		<button class="modal-close" type="button" aria-label="Закрыть окно"></button>
+		<form class="form-feedback" action="https://echo.htmlacademy.ru" method="post" target="_blank">
+			<div class="form-wrapper">
+				<div class="feedback-item">
+					<label for="feedback-name-field">Ваше имя:</label>
+					<input id="feedback-name-field" placeholder="Имя Фамилия" type="text" name="feedback-name-field">
+				</div>
+				<div class="feedback-item">
+					<label for="feedback-email-field">Ваш e-mail:</label>
+					<input id="feedback-email-field" placeholder="email@example.com" type="email" name="feedback-email-field">
+				</div>
+			</div>
+			<div class="feedback-item">
+				<label for="feedback-content-field">Текст письма:</label>
+				<textarea id="feedback-content-field" placeholder="В свободной форме" name="feedback-content-field"></textarea>
+			</div>
+			<button class="btn" type="submit">Отправить</button>
+		</form>
+	</section>
+	<div class="modal-overlay"></div>
 	</main>
 
 	<footer class="page-footer">
@@ -153,29 +176,7 @@
 			</div>
 		</div>
 	</footer>
-	<div class="container">
-		<section class="modal-feedback">
-			<h3 class="modal-feedback-title">Напишите нам</h3>
-			<button class="modal-close" type="button" aria-label="Закрыть окно"></button>
-			<form class="form-feedback" action="https://echo.htmlacademy.ru" method="post" target="_blank">
-				<div class="form-wrapper">
-					<div class="feedback-item">
-						<label for="feedback-name-field">Ваше имя:</label>
-						<input id="feedback-name-field" placeholder="Имя Фамилия" type="text" name="feedback-name-field">
-					</div>
-					<div class="feedback-item">
-						<label for="feedback-email-field">Ваш e-mail:</label>
-						<input id="feedback-email-field" placeholder="email@example.com" type="email" name="feedback-email-field">
-					</div>
-				</div>
-				<div class="feedback-item">
-					<label for="feedback-content-field">Текст письма:</label>
-					<textarea id="feedback-content-field" placeholder="В свободной форме" name="feedback-content-field"></textarea>
-				</div>
-				<button class="btn" type="submit">Отправить</button>
-			</form>
-		</section>
-	</div>
+	
 	<script src="js/script.js"></script>
 </body>
 </html>
