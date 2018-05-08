@@ -122,9 +122,10 @@
 					<h3>NЁRDS DESIGN STUDIO</h3>
 					<p class="address">191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8</p>
 					<p class="tel">тел. +7 (812) 275-75-75</p>
-					<a href="#" class="btn">Напишите нам</a>
+					<button class="btn btn-feedback" type="button">Напишите нам</button>
 				</section>
 			</section>
+			
 		</div>
 		<section class="map">
 			<h3 class="visually-hidden">Карта</h3>
@@ -152,6 +153,29 @@
 			</div>
 		</div>
 	</footer>
+	<div class="container">
+		<section class="modal-feedback">
+			<h3 class="modal-feedback-title">Напишите нам</h3>
+			<button class="modal-close" type="button" aria-label="Закрыть окно"></button>
+			<form class="form-feedback" action="https://echo.htmlacademy.ru" method="post" target="_blank">
+				<div class="form-wrapper">
+					<div class="feedback-item">
+						<label for="feedback-name-field">Ваше имя:</label>
+						<input id="feedback-name-field" placeholder="Имя Фамилия" type="text" name="feedback-name-field">
+					</div>
+					<div class="feedback-item">
+						<label for="feedback-email-field">Ваш e-mail:</label>
+						<input id="feedback-email-field" placeholder="email@example.com" type="email" name="feedback-email-field">
+					</div>
+				</div>
+				<div class="feedback-item">
+					<label for="feedback-content-field">Текст письма:</label>
+					<textarea id="feedback-content-field" placeholder="В свободной форме" name="feedback-content-field"></textarea>
+				</div>
+				<button class="btn" type="submit">Отправить</button>
+			</form>
+		</section>
+	</div>
 	<script src="js/script.js"></script>
 </body>
 </html>

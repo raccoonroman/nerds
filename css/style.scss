@@ -525,6 +525,151 @@ input[type="checkbox"].visually-hidden {
 	}
 }
 
+
+.modal-feedback {
+	position: relative;
+	width: 960px;
+	min-height: 590px;
+	padding: 64px 100px 84px;
+	box-shadow: 0 20px 40px rgba(0, 1, 1, .75);
+}
+
+.modal-feedback-title {
+	margin: 0;
+	margin-bottom: 40px;
+	font-size: 45px;
+	line-height: 45px;
+	font-weight: 500;
+	color: #000;
+}
+
+.modal-close {
+	position: absolute;
+	top: 75px;
+	right: 87px;
+	width: 27px;
+	height: 27px;
+	border: 0;
+	cursor: pointer;
+	background-color: transparent;
+
+	&::before,
+	&::after {
+		content: "";
+	    position: absolute;
+	    top: 12px;
+	    left: 0;
+	    width: 27px;
+	    height: 3px;
+	    background-color: rgba(251, 86, 90, .3);
+	}
+
+	&::before {
+		transform: rotate(45deg);
+	}
+
+	&::after {
+		transform: rotate(-45deg);
+	}
+
+	&:hover::before,
+	&:hover::after,
+	&:focus::before,
+	&:focus::after {
+		background-color: rgba(251, 86, 90, 1);
+	}
+
+	&:active::before,
+	&:active::after {
+		background-color: rgba(251, 86, 90, .1);
+	}
+}
+
+.form-feedback {
+
+	.form-wrapper {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 33px;
+	}
+
+	> .feedback-item {
+		margin-bottom: 47px;
+	}
+
+	.btn {
+		padding: 16px 84px;
+	}
+}
+
+
+
+.feedback-item {
+
+	label {
+		display: block;
+		margin-bottom: 9px;
+		line-height: 18px;
+		font-weight: 700;
+		color: #000;
+	}
+
+	input {
+		width: 360px;
+	}
+
+	textarea {
+		width: 100%;
+		min-height: 118px;
+	}
+
+	input, 
+	textarea {
+		padding: 14px;
+		border: 2px solid #d7dcde;
+		border-radius: 3px;
+
+		&:hover {
+			border-color: #b4b9bb;
+		}
+
+		&:focus {
+			border-color: #000;
+			outline: none;
+		}
+
+		&:invalid {
+			color: #e74246;
+			border-color: #e74246;
+		}
+	}
+
+	input::-webkit-input-placeholder,
+	textarea::-webkit-input-placeholder {
+		line-height: 18px;
+		color: #444;
+	}
+
+	input:-ms-input-placeholder,
+	textarea:-ms-input-placeholder {
+		line-height: 18px;
+		color: #444;
+	}
+
+	input::-ms-input-placeholder,
+	textarea::-ms-input-placeholder {
+		line-height: 18px;
+		color: #444;
+	}
+
+	input::placeholder,
+	textarea::placeholder {
+		line-height: 18px;
+		color: #444;
+	}
+}
+
+
 .page-footer {
 	padding: 69px 0 70px;
 }
