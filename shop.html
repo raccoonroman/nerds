@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>nerds - shop</title>
+	<link rel="stylesheet" href="css/normalize-min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="shop-page">
+<header class="page-header">
+	<div class="container">
+		<nav class="page-nav">
+			<a class="page-header-logo" href="index.html" title="На главную страницу">
+				<img src="img/nerds-logo.svg" alt="Логотип Нёрдс" width="160" height="65">
+			</a>
+			<ul class="nav-items">
+				<li class="nav-item"><a href="#" class="link">Студия</a></li>
+				<li class="nav-item"><a href="#" class="link">Клиенты</a></li>
+				<li class="nav-item"><a class="link">Магазин</a></li>
+				<li class="nav-item"><a href="#contacts" class="link">Контакты</a></li>
+			</ul>
+			<ul class="nav-user-items">
+				<li class="nav-user-item"><a href="#" class="link basket">Корзина</a></li>
+			</ul>
+		</nav>
+		<h1 class="shop-header-title">Магазин готовых шаблонов</h1>
+	</div>
+</header>
+<main>
+	<div class="container">
+		<div class="shop-columns">
+			<section class="filters">
+				<h2 class="visually-hidden">Фильтр</h2>
+				<form class="form-filter" action="https://echo.htmlacademy.ru" method="get">
+					<fieldset class="filter-item filter-item-range">
+						<legend>Стоимость:</legend>
+						<div class="range-filter">
+							<div class="range-controls">
+								<div class="scale">
+									<div class="bar"></div>
+								</div>
+								<div class="toggle toggle-min"></div>
+								<div class="toggle toggle-max"></div>
+							</div>
+							<div class="price-controls">
+								<label class="min-price">от <input name="min-price" type="text" value="0"></label>
+								<label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+							</div>
+						</div>
+					</fieldset>
+					<fieldset class="filter-item filter-item-grid">
+						<legend>Сетка:</legend>
+						<ul>
+							<li class="filter-option">
+								<input class="visually-hidden" id="filter-adaptive" type="radio" name="grid-group" value="adaptive" checked>
+								<label for="filter-adaptive">Адаптивная</label>
+							</li>
+							<li class="filter-option">
+								<input class="visually-hidden" id="filter-fixed" type="radio" name="grid-group" value="fixed">
+								<label for="filter-fixed">Фиксированная</label>
+							</li>
+							<li class="filter-option">
+								<input class="visually-hidden" id="filter-rubber" type="radio" name="grid-group" value="rubber">
+								<label for="filter-rubber">Резиновая</label>
+							</li>
+						</ul>
+					</fieldset>
+					<fieldset class="filter-item filter-item-features">
+						<legend>Особенности:</legend>
+						<ul>
+							<li>
+								<input class="visually-hidden" type="checkbox" id="filter-slider" name="slider" checked>
+								<label for="filter-slider">Слайдер</label>
+							</li>
+							<li>
+								<input class="visually-hidden" type="checkbox" id="filter-benefit-block" name="benefit-block">
+								<label for="filter-benefit-block">Блок преимуществ</label>
+							</li>
+							<li>
+								<input class="visually-hidden" type="checkbox" id="filter-news" name="news" checked>
+								<label for="filter-news">Новости</label>
+							</li>
+							<li>
+								<input class="visually-hidden" type="checkbox" id="filter-gallery" name="gallery">
+								<label for="filter-gallery">Галерея</label>
+							</li>
+							<li>
+								<input class="visually-hidden" type="checkbox" id="filter-basket" name="basket">
+								<label for="filter-basket">Корзина</label>
+							</li>
+						</ul>
+					</fieldset>
+					<button class="filter-btn">Показать</button>
+				</form>
+			</section>
+			<section class="templates"></section>
+		</div>
+	</div>
+</main>
+</body>
+</html>
