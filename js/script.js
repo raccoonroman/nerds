@@ -1,3 +1,20 @@
+//map
+function initMap() {
+	var map = new google.maps.Map(document.getElementById('map'), {
+		zoom: 17,
+		center: {lat: 59.9393, lng: 30.322}
+	});
+
+	var image = './img/map-marker.png';
+	var beachMarker = new google.maps.Marker({
+		position: {lat: 59.9387942, lng: 30.3230833},
+		map: map,
+		icon: image
+	});
+}
+
+
+//popup
 var btnFeedback = document.querySelector(".btn-feedback");
 var popup = document.querySelector(".modal-feedback");
 var overlay = document.querySelector(".modal-overlay");
@@ -40,6 +57,8 @@ window.addEventListener("keydown", function (evt) {
 	}
 });
 
+
+//slider
 var slideIndex = 1;
 showSlides(slideIndex);
 
