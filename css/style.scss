@@ -629,6 +629,7 @@ input[type="checkbox"].visually-hidden {
 	cursor: pointer;
 	background-color: transparent;
 
+
 	&::before,
 	&::after {
 		content: "";
@@ -638,6 +639,7 @@ input[type="checkbox"].visually-hidden {
 	    width: 27px;
 	    height: 3px;
 	    background-color: rgba(251, 86, 90, .3);
+	    transition: .3s;
 	}
 
 	&::before {
@@ -653,6 +655,16 @@ input[type="checkbox"].visually-hidden {
 	&:focus::before,
 	&:focus::after {
 		background-color: rgba(251, 86, 90, 1);
+	}
+
+	&:hover::before,
+	&:focus::before {
+		transform: rotate(405deg);
+	}
+
+	&:hover::after,
+	&:focus::after {
+		transform: rotate(315deg);
 	}
 
 	&:active::before,
